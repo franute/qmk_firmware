@@ -12,6 +12,7 @@ extern keymap_config_t keymap_config;
 #define RAISE   MO(_RAISE)
 #define ADJUST  MO(_ADJUST)
 #define NUMPAD  MO(_NUMPAD)
+#define FNLAYER MO(_FUNCTION)
 
 // Layer taps
 #define RAI_BCK LT(_RAISE, KC_BSPC)

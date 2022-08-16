@@ -21,6 +21,7 @@ extern keymap_config_t keymap_config;
 #define LOW_ENT LT(_LOWER, KC_ENT)
 #define LOW_SPC LT(_LOWER, KC_SPC)
 #define LOW_GUI LT(_LOWER, KC_LGUI)
+#define FN_BCK  LT(_FUNCTION, KC_BSPC)
 
 // Mod-Taps
 // https://github.com/qmk/qmk_firmware/blob/master/docs/feature_advanced_keycodes.md

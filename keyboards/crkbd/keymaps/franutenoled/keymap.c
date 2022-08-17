@@ -29,16 +29,6 @@ enum layer_number {
   _ADJUST,
 };
 
-enum {
-    TAP_LBR,
-    TAP_RBR,
-};
-
-qk_tap_dance_action_t tap_dance_actions[] = {
-    [TAP_LBR] = ACTION_TAP_DANCE_DOUBLE(KC_LCBR, KC_LBRC),
-    [TAP_RBR] = ACTION_TAP_DANCE_DOUBLE(KC_RCBR, KC_RBRC),
-};
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_QWERTY] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
@@ -80,9 +70,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
       XXXXXXX,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_GRV,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______, KC_EXLM,   KC_AT, KC_LPRN, KC_RPRN, KC_PERC,                      KC_CIRC, KC_AMPR, KC_ASTR, KC_HASH,  KC_DLR, KC_BSLS,
+      _______, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                      KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSLS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______,  S_NUBS, KC_NUBS, TD(TAP_LBR), TD(TAP_RBR), KC_UNDS,              KC_MINS, KC_PLUS,  KC_EQL, XXXXXXX, XXXXXXX, KC_PIPE,
+      _______,  S_NUBS, KC_NUBS, KC_LBRC, KC_RBRC, KC_UNDS,                      KC_MINS, KC_PLUS,  KC_EQL,  KC_DOT, XXXXXXX, KC_PIPE,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                            ADJUST, _______, KC_BSPC,    _______, XXXXXXX, KC_RALT
                                       //`--------------------------'  `--------------------------'

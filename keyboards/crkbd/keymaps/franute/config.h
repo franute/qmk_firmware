@@ -27,6 +27,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define MASTER_LEFT
 // #define MASTER_RIGHT
 #define EE_HANDS
+// AVR controllers with the Caterina bootloader (e.g. Pro Micro):
+//     :avrdude-split-left
+//     :avrdude-split-right
+// AVR controllers with the stock Amtel DFU or DFU compatible bootloader (e.g. Elite-C):
+//     :dfu-split-left
+//     :dfu-split-right
+// ARM controllers with a DFU compatible bootloader (e.g. Proton-C):
+//     :dfu-util-split-left
+//     :dfu-util-split-right
+// ARM controllers with a UF2 compatible bootloader:
+//     :uf2-split-left
+//     :uf2-split-right
+// usage: make crkbd:franutenoled:avrdude-split-left
+
 
 #define USE_SERIAL_PD2
 #define FORCE_NKRO

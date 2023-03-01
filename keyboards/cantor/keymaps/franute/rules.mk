@@ -14,5 +14,5 @@ GRAVE_ESC_ENABLE   = no
 
 EXTRAFLAGS        += -flto
 COMMAND_ENABLE	   = no # Commands for debug and configuration
-UNICODE_ENABLE     = no# Unicode
+UNICODE_ENABLE     = yes # Unicode
 MOUSEKEY_ENABLE    = no # Mouse keys(+4700)

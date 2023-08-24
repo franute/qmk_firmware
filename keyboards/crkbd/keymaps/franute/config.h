@@ -45,7 +45,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_SERIAL_PD2
 #define FORCE_NKRO
 
-#define IGNORE_MOD_TAP_INTERRUPT
 #define QUICK_TAP_TERM 0
 #define TAPPING_TERM 175
 #define PERMISSIVE_HOLD

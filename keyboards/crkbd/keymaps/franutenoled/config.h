@@ -40,6 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //     :uf2-split-left
 //     :uf2-split-righ
 // usage: make crkbd:franutenoled:avrdude-split-left
+// make crkbd:franutenoled:avrdude-split-left;sleep 5;make crkbd:franutenoled:avrdude-split-right
 
 #define USE_SERIAL_PD2
 #define FORCE_NKRO
@@ -47,8 +48,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define QUICK_TAP_TERM 0
 #define TAPPING_TERM 175
 #define PERMISSIVE_HOLD
-
-#define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
 
 /* Disable unused and unneeded features to reduce on firmware size */
 #ifdef LOCKING_SUPPORT_ENABLE

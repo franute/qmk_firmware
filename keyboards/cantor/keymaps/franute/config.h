@@ -39,7 +39,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // ARM controllers with a UF2 compatible bootloader:
 //     :uf2-split-left
 //     :uf2-split-righ
-// usage for blackpill: make cantor:franute:dfu-util-split-left
+// qmk flash -kb cantor -km franute -bl dfu-util-split-left
+// qmk flash -kb cantor -km franute -bl dfu-util-split-right
+
 
 #define USE_SERIAL_PD2
 #define FORCE_NKRO

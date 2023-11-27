@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       KC_LSFT,    KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                         KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_RSFT,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          KC_LALT, KC_LGUI, LOW_ENT,    RAI_SPC,  FN_BCK, RAI_BCK 
+                                          KC_LALT, KC_LGUI, LOW_ENT,    RAI_SPC, KC_BSPC, FN_BCK 
                                       //`--------------------------'  `--------------------------'
 
   ),
@@ -80,7 +80,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       _______,  S_NUBS, KC_NUBS,   TD(1),   TD(0), KC_UNDS,                      KC_MINS, KC_PLUS,  KC_EQL,  KC_DOT, XXXXXXX, KC_PIPE,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          _______, _______, KC_BSPC,    _______, KC_RALT, XXXXXXX
+                                          _______, KC_RALT, KC_BSPC,    _______,   KC_LT,   KC_GT
                                       //`--------------------------'  `--------------------------'
   ),
 
@@ -147,7 +147,7 @@ void oled_render_layer_state(void) {
             break;
     }
 
-    if (host_keyboard_leds() & (1<<USB_LED_CAPS_LOCK)) {
+    if (host_keyboard_leds() & (2)) {
         oled_write_ln_P(PSTR("CAPS"), false);
     }
     else {

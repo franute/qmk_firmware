@@ -40,7 +40,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //     :uf2-split-left
 //     :uf2-split-righ
 // usage: make crkbd:franutenoled:avrdude-split-left
-// make crkbd:franutenoled:avrdude-split-left;sleep 5;make crkbd:franutenoled:avrdude-split-right
+// qmk flash -kb crkbd -km franutenoled -bl avrdude-util-split-left -e AVR_CFLAGS="-Wno-array-bounds"
+// qmk flash -kb crkbd -km franutenoled -bl avrdude-util-split-right -e AVR_CFLAGS="-Wno-array-bounds"
 
 #define USE_SERIAL_PD2
 #define FORCE_NKRO

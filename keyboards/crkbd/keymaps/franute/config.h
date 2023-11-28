@@ -39,8 +39,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // ARM controllers with a UF2 compatible bootloader:
 //     :uf2-split-left
 //     :uf2-split-right
-// qmk flash -kb crkbd -km franute -bl avrdude-util-split-left -e AVR_CFLAGS="-Wno-array-bounds"
-// qmk flash -kb crkbd -km franute -bl avrdude-util-split-right -e AVR_CFLAGS="-Wno-array-bounds"
+// qmk flash -kb crkbd -km franute -bl avrdude-split-left -e AVR_CFLAGS="-Wno-array-bounds"
+// qmk flash -kb crkbd -km franute -bl avrdude-split-right -e AVR_CFLAGS="-Wno-array-bounds"
 
 
 #define USE_SERIAL_PD2

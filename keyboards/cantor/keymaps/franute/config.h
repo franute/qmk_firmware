@@ -41,6 +41,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //     :uf2-split-righ
 // qmk flash -kb cantor -km franute -bl dfu-util-split-left
 // qmk flash -kb cantor -km franute -bl dfu-util-split-right
+// When using the docker_build.sh script, one should use the same format as when locally using `make`:
+// for example: make cantor:franute:dfu-util-split-left
 
 
 #define USE_SERIAL_PD2

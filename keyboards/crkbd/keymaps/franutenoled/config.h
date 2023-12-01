@@ -42,6 +42,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // usage: make crkbd:franutenoled:avrdude-split-left
 // qmk flash -kb crkbd -km franutenoled -bl avrdude-split-left -e AVR_CFLAGS="-Wno-array-bounds"
 // qmk flash -kb crkbd -km franutenoled -bl avrdude-split-right -e AVR_CFLAGS="-Wno-array-bounds"
+// When using the docker_build.sh script, one should use the same format as when locally using `make`:
+// for example: make crkbd:franutenoled:avrdude-split-left
 
 #define USE_SERIAL_PD2
 #define FORCE_NKRO

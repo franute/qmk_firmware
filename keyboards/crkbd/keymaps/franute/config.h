@@ -41,6 +41,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //     :uf2-split-right
 // qmk flash -kb crkbd -km franute -bl avrdude-split-left -e AVR_CFLAGS="-Wno-array-bounds"
 // qmk flash -kb crkbd -km franute -bl avrdude-split-right -e AVR_CFLAGS="-Wno-array-bounds"
+// When using the docker_build.sh script, one should use the same format as when locally using `make`:
+// for example: make crkbd:franute:avrdude-split-left
 
 
 #define USE_SERIAL_PD2

@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_LOWER] = LAYOUT_split_3x6_3(
         XXXXXXX, LALT(KC_F4), XXXXXXX, LGUI(KC_H), KC_PSCR, KC_PGUP,                        KC_GRV, KC_HOME,   KC_UP,  KC_END, KC_VOLU,  KC_INS,
-        _______, KC_LSFT, KC_LCTL, KC_LGUI, KC_LALT, KC_PGDN,                               KC_TAB, KC_LEFT, KC_DOWN,KC_RIGHT, KC_VOLD, XXXXXXX,
+        _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_PGDN,                               KC_TAB, KC_LEFT, KC_DOWN,KC_RIGHT, KC_VOLD, XXXXXXX,
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                              XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, XXXXXXX,
                                             _______, _______, _______,          KC_DELETE,KC_BSPC, ADJUST
     ),
@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_FUNCTION] = LAYOUT_split_3x6_3(
         XXXXXXX,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-        XXXXXXX,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,                            XXXXXXX, KC_LALT, KC_LGUI, KC_RCTL, KC_RSFT, XXXXXXX,
+        XXXXXXX,   KC_F6,   KC_F7,   KC_F8,   KC_F9,  KC_F10,                            XXXXXXX, KC_RSFT, KC_RCTL, KC_LALT, KC_LGUI, XXXXXXX,
         XXXXXXX,  KC_F11,  KC_F12, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
                                             _______, _______, _______,          _______, _______, _______
     ),

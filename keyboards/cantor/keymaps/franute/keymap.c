@@ -47,14 +47,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                             _______, LOW_GUI, KC_SPC,              RAI_ENT, _______, _______
     ),
     [_LOWER] = LAYOUT_split_3x6_3(
-        XXXXXXX, LALT(KC_F4), XXXXXXX, LGUI(KC_H), KC_PSCR, KC_PGUP,                        KC_GRV, KC_HOME,   KC_UP,  KC_END, KC_VOLU,  KC_INS,
-        _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_PGDN,                               KC_TAB, KC_LEFT, KC_DOWN,KC_RIGHT, KC_VOLD, XXXXXXX,
-        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                              XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, XXXXXXX,
-                                            _______, _______, _______,          KC_DELETE,KC_BSPC, ADJUST
+        XXXXXXX, LALT(KC_F4), XXXXXXX, LGUI(KC_H), XXXXXXX, XXXXXXX,                        KC_GRV, KC_HOME,   KC_UP,  KC_END, KC_PSCR,  KC_INS,
+        _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,                               KC_TAB, KC_LEFT, KC_DOWN,KC_RIGHT, XXXXXXX, XXXXXXX,
+        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                              XXXXXXX, KC_PGUP, XXXXXXX, KC_PGDN, XXXXXXX, XXXXXXX,
+                                            _______, _______, _______,          KC_DELETE, KC_BSPC, ADJUST
     ),
     [_RAISE] = LAYOUT_split_3x6_3(
         XXXXXXX,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                               KC_6,    KC_7,    KC_8,    KC_9,    KC_0,  KC_GRV,
-        _______, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                            KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSLS,
+        XXXXXXX, KC_EXLM,   KC_AT, KC_HASH,  KC_DLR, KC_PERC,                            KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSLS,
         _______,  S_NUBS, KC_NUBS,   TD(1),   TD(0), KC_UNDS,                            KC_MINS, KC_PLUS,  KC_EQL,  KC_DOT, XXXXXXX, KC_PIPE,
                                             _______, KC_RALT, KC_BSPC,          _______,   KC_LT,   KC_GT
     ),
@@ -66,8 +66,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_ADJUST] = LAYOUT_split_3x6_3(
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,   RESET,                             XXXXXXX, XXXXXXX, KC_VOLU, XXXXXXX, XXXXXXX, TG_GAME,
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    KC_G,                             XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX,
-        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,    KC_B,                             XXXXXXX, XXXXXXX, KC_VOLD, XXXXXXX, XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                             XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                             XXXXXXX, XXXXXXX, KC_VOLD, XXXXXXX, XXXXXXX, XXXXXXX,
                                             XXXXXXX, _______, _______,           _______, _______, XXXXXXX
     ),
 };

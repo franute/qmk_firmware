@@ -62,11 +62,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_LOWER] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      XXXXXXX, LALT(KC_F4), XXXXXXX, LGUI(KC_H), KC_PSCR, KC_PGUP,                KC_GRV, KC_HOME,   KC_UP,  KC_END, KC_VOLU,  KC_INS,
+      XXXXXXX, LALT(KC_F4), XXXXXXX, LGUI(KC_H), XXXXXXX, XXXXXXX,                KC_GRV, KC_HOME,   KC_UP,  KC_END, KC_PSCR,  KC_INS,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_PGDN,                       KC_TAB, KC_LEFT, KC_DOWN,KC_RIGHT, KC_VOLD, XXXXXXX,
+      _______, KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, XXXXXXX,                       KC_TAB, KC_LEFT, KC_DOWN,KC_RIGHT, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, KC_MUTE, XXXXXXX,
+      _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                      XXXXXXX, KC_PGUP, XXXXXXX, KC_PGDN, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           _______, _______, _______,   KC_DELETE,KC_BSPC, ADJUST
                                       //`--------------------- -----'  `--------------------------'
